@@ -19,5 +19,4 @@ class EasyObjects implements \App\Interfaces\Objects
     {
         return $this->objects;
     }
-
 }

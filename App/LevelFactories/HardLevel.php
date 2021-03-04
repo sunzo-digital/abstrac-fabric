@@ -7,19 +7,18 @@ namespace App\LevelFactories;
 use App\Interfaces\AbstractLevel;
 use App\Interfaces\Map;
 use App\Interfaces\Objects;
+use App\Maps\HardMap;
+use App\Objects\HardObjects;
 
 class HardLevel implements AbstractLevel
 {
-    const CELLS = 25;
-    const OBJECTS = 5;
-
     public function createMap(): Map
     {
-        // TODO: Implement createMap() method.
+        return new HardMap();
     }
 
     public function createObjects(): Objects
     {
-        // TODO: Implement createObjects() method.
+        return new HardObjects();
     }
 }
